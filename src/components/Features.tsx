@@ -2,7 +2,7 @@ import { HStack, Icon, Text, StackProps, Box } from "@chakra-ui/react";
 import { MoneyBackGuaranteeIcon, OverOnceBillionFoodsIcon, ShareWithFacebookIcon } from "../icons/Icons";
 
 interface FeatureProps extends StackProps {
-    icon: ElementType;
+    icon: React.ElementType;
 }
 
 function Feature(props: FeatureProps) {

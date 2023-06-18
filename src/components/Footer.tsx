@@ -8,7 +8,8 @@ export function Footer() {
   const [query,setQuerys] = useState('');
 
   //this state is used to store the data from the api
-  const [container, setContainer] = useState([]);
+/* eslint-disable @typescript-eslint/no-explicit-any */
+  const [container, setContainer] = useState<any[]>([]);
 
   //this takes the value of the input once submit is clicked and stores it in endPoint
   const [endPoint, setendPoint] = useState('');
@@ -45,22 +46,23 @@ export function Footer() {
 
 //e is every value we type in
 //setQuerys is the changer that updates the state
-const onChangeHandler = (e) => {
-  setQuerys(e.target.value);
+const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>): void => {
+  if(!event.target) return;
+  setQuerys(event.target.value);
 }
 
 //allows the submit button to work
 //setendPoint having endpoint as a parameter allows us to use the value of endpoint once the 
 //button is clicked and used as the value for endPoint which is set by setendPoint
-const submitHandler = (e) => {
-  e.preventDefault();
+const submitHandler = (event: React.ChangeEvent<HTMLFormElement>) => {
+  event.preventDefault();
   setendPoint(query);
 }
 
     return (
         <ChakraProvider>
             <Box display='flex' justifyContent='center' pt='20'>
-                <form onSubmit={ submitHandler }>
+                <form onSubmit={submitHandler}>
                 <Input size='lg' width='lg' type='text' placeholder='Enter a query' onChange={ onChangeHandler }/>
                 <Button colorScheme='blue' size='lg' type="submit">
                     Search
