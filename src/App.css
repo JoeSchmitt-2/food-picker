@@ -1,0 +1,20 @@
+/*
+effects the food images alignment, placement, border, etc.
+*/
+.element {
+  margin-block: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Copperplate', Papyrus, fantasy;
+  font-weight: bold;
+  ;
+}
+/*
+effects the food images size
+*/
+.element img {
+    width: 300px;
+    height: 300px;
+  }
