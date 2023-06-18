@@ -1,1 +1,1 @@
-# Application made in typescript utilizing Rapid API, CSS, Responsive UI Design, HTML, and React
+# Application made in TypeScript/JavaScript utilizing: Rapid API; CSS/HTML; Responsive UI Design; Chakra; Yarn; Vite; and React.
