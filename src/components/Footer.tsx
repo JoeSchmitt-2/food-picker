@@ -1,14 +1,6 @@
-import {
-	Box,
-	Button,
-	Input,
-	ChakraProvider,
-	Stack,
-	Center,
-} from "@chakra-ui/react";
+import { Box, Button, Input, ChakraProvider, Stack } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import "/src/App.css";
-import TextField from "@material-ui/core/TextField";
 
 export function Footer() {
 	//this state is used to store the value of the input
@@ -24,6 +16,7 @@ export function Footer() {
 	//this calls fetchMe() when the state 'query->endPoint', aka input, is changed
 	useEffect(() => {
 		fetchMe();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [endPoint]);
 
 	//fetching data from the api
