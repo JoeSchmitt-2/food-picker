@@ -17,7 +17,7 @@ export function Header() {
 						fontSize={["3xl", "3xl", "5xl"]}
 						color="#F7FAFC"
 					>
-						Hungry Hungry HippJoes
+						Hungry Hungry HipJOEs
 					</Heading>
 					<Text fontWeight="500" fontSize={["lg", "lg", "2xl"]} pt="16px">
 						Enter a query and get a random food to feed the hippos!
