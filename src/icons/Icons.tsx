@@ -4,8 +4,6 @@ import { MdFastfood } from "react-icons/md";
 import { BsFacebook } from "react-icons/bs";
 import { LuCat } from "react-icons/lu";
 
-MdFastfood
-
 export class CheckIcon extends Component {
     render() {
         return (
