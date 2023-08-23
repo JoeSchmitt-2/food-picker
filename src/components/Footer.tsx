@@ -1,4 +1,4 @@
-import { Box, Button, Input, ChakraProvider, Stack } from "@chakra-ui/react";
+import { Box, Button, Input, ChakraProvider, Stack, Center } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import "/src/App.css";
 
@@ -66,18 +66,17 @@ export function Footer() {
 
 	return (
 		<ChakraProvider>
-			<Box display="flex" justifyContent="center" pt="20" pb="20">
+			<Box display="flex" justifyContent="center"  pt="20" pb="19">
 				<form onSubmit={submitHandler}>
 					<Input
 						size="lg"
-						height="50px"
-						width="lg"
+						width="sm"
 						type="text"
 						placeholder="Enter a query to appease the hippos hunger"
 						value={query}
 						onChange={onChangeHandler}
 					/>
-					<Button colorScheme="blue" size="lg" type="submit">
+					<Button colorScheme="blue" verticalAlign="top" size="lg" type="submit">
 						Search
 					</Button>
 				</form>
